@@ -1,10 +1,11 @@
 import os, django
-from testapp.models import Employee
 from faker import Faker
 from random import *
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'fbvcrudproject.settings')
 django.setup()
+
+from testapp.models import Employee
 
 faker = Faker()
 def populate(n):
