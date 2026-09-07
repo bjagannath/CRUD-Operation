@@ -7,7 +7,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'fbvcrudproject.settings')
 django.setup()
 
 faker = Faker()
-def papulate(n):
+def populate(n):
     for i in range(n):
         feno=randint(1001,9999)
         fename=faker.name()
